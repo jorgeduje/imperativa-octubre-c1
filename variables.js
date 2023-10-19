@@ -107,3 +107,50 @@ let bool = true
 console.log( !bool )
 
 // LOGICOS
+
+console.log("--------")
+let tienePermisoAdmin = true
+let siEstaLogueado = true
+
+// and ---> &&
+// devuelve true cuando absolutamente todas las condiciones son true
+let tienePermiso = siEstaLogueado === true && tienePermisoAdmin === true
+
+// COMPETENCIA DE BICI 
+// primero que sea mayor de edad  o si no que venga con un acompáñante
+// que tenga los estudios medicos 
+// if( estudiosMedicos && edad >= 18 ){
+
+// }
+
+
+// or  ---> ||
+// devuelve false cuando absolutamente todas las condiciones son false
+let tienePermiso2 = siEstaLogueado === true || tienePermisoAdmin === true
+
+console.log( tienePermiso )
+console.log( tienePermiso2 )
+
+// falsy --> 0 / "" / undefined / null 
+// truthy -> "hola" / 1 / [] / {} / 
+
+// && --> me devuelve el ultimo truthy o el primer falsy
+
+// || --> me devuelve el primer truthy o el ultimo falsy
+
+let truthys =  siEstaLogueado === true &&  0 && null && "hola" 
+console.log(truthys)
+
+let falsys = false || 0 || null || undefined
+
+
+console.log(falsys)
+
+// let compraFinalizada = true
+
+//  compraFinalizada  && <h1>Gracias por tu compra</h1>
+
+let r = true
+let n = false
+
+// r && n
