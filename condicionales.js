@@ -58,13 +58,9 @@ const calcularImpuesto = (marcaDelAuto) => {
       impuesto += 70;
       break;
     case "renault":
-      impuesto += 12;
-      break;
     case "bmw":
-      impuesto += 55;
-      break;
     case "fiat":
-      impuesto += 30;
+      impuesto += 20;
       break;
     default:
       impuesto = "Su auto esta excento";
@@ -75,7 +71,7 @@ const calcularImpuesto = (marcaDelAuto) => {
   return impuesto;
 };
 
-let totalPagar = calcularImpuesto("volvo");
+let totalPagar = calcularImpuesto("fiat");
 console.log(totalPagar);
 
 let totalPagar2 = calcularImpuesto("audi");
