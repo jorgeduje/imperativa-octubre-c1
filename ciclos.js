@@ -82,12 +82,20 @@ const tablaDeMultiplicar = ( numero )=>{
     //     console.log( `${numero} * ${i} = ${ numero * i } ` )
     // }
     
-    let i = 1
-    while( i <= 10){
+    // let i = 20
+    // while( i <= 10){
+    //     console.log( numero + " * " + i + " = " + numero * i  )
+    //     i++
+    // }
+
+    let i = 20
+
+    do{
         console.log( numero + " * " + i + " = " + numero * i  )
         i++
-    }
+    } 
+    while( i <= 10)
 
 }
 
-tablaDeMultiplicar( 3)
+tablaDeMultiplicar(3)
