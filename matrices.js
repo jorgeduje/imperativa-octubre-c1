@@ -66,8 +66,7 @@ let res = recorrerCol(matrix2, 0)
 console.log(res)
 
 // CUANDO LA MATRIZ ES CUADRADA ( mismas filas que columnas y esta completa)
-// recorrer la diagonal principal --> un for --> longitud a la matriz
-// recorrer la diagonal secundaria --> for --> longitud a la matriz 
+
 
 let matrix3 = [
     [1, 2, 4], // fila 0
@@ -75,14 +74,75 @@ let matrix3 = [
     [7, 4, 7], // fila 2
 ];
 
+// recorrer la diagonal principal --> un for --> longitud a la matriz
 // matrix3[0][0]
 // matrix3[1][1]
 // matrix3[2][2]
 
+const recorrerPrincipal = (mat)=>{
+    for(let i = 0; i < mat.length; i++){
+        mat[i][i]
+    }
+}
+
+
+
+
+// recorrer la diagonal secundaria --> for --> longitud a la matriz 
+let matrix4 = [
+    [1, 2, 4], // fila 0
+    [4, 1, 3], // fila 1
+    [7, 4, 7], // fila 2
+];
 // matrix3[0][2]
 // matrix3[1][1]
 // matrix3[2][0]
+console.log("-----")
+const recorrerSec = mat =>{
+
+    for(let i = 0; i < mat.length; i++){
+       console.log(  mat[i][ mat.length - 1 - i ] )
+     
+    }
+
+}
+recorrerSec(matrix4)
 
 
 // recorrer la matriz completa ---> doble ciclo for ( esto es lo medianamente dificil )
+
+
+let matrix5 = [
+    [1, 2, 4], // fila 0
+    [4, 1, 3], // fila 1
+    [7, 4, 7], // fila 2
+];
+
+// const recorrerCompleta = mat => {
+
+//     for( let i = 0 ; i < mat.length; i++  ){ // i maneja las filas
+//         console.log( "estoy en la fila " + i )
+
+//         for(let j = 0; j < mat[i].length; j++ ){ // j maneja las columnas
+//             console.log("estoy en la columna " + j)
+//            console.log( mat[i][j])
+//         }
+        
+//     }
+
+// }
+
+// recorrerCompleta(matrix5)
+
+const recorrerCompleta = mat => {
+
+    for( let i = 0 ; i < mat.length; i++  ){
+        for(let j = 0; j < mat[i].length; j++ ){ 
+           mat[i][j]
+        }  
+    }
+
+}
+
+recorrerCompleta(matrix5)
 
